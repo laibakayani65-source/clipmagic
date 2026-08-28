@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #020617;
+    color: #e2e8f0;
+  }
+}
+
+.font-display {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', serif;
+}
+
+.font-urdu-clean {
+  font-family: 'Noto Sans Arabic', 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-bungee {
+  font-family: 'Bungee', cursive, sans-serif;
+}
+
+.font-anton {
+  font-family: 'Anton', sans-serif;
+}
+
+/* Bold Typography Theme Accents & Glowing styling */
+.blue-glow {
+  box-shadow: 0 0 35px -5px rgba(37, 99, 235, 0.4);
+}
+
+.blue-glow-sm {
+  box-shadow: 0 0 15px -2px rgba(37, 99, 235, 0.35);
+}
+
+.blue-glow-intense {
+  box-shadow: 0 0 50px 0px rgba(37, 99, 235, 0.6), 0 0 20px 2px rgba(59, 130, 246, 0.5);
+}
+
+.cyan-glow {
+  box-shadow: 0 0 30px -5px rgba(6, 182, 212, 0.4);
+}
+
+/* Micro tracking eyebrow classes */
+.tracking-micro {
+  letter-spacing: 0.15em;
+}
+
+/* Caption Text Effects */
+.text-stroke-black {
+  -webkit-text-stroke: 3px #000000;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.9);
+}
+
+.text-stroke-thick {
+  -webkit-text-stroke: 4px #000000;
+  paint-order: stroke fill;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.95);
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 2px #ffffff;
+}
+
+.text-glow-neon {
+  text-shadow: 0 0 10px #38bdf8, 0 0 20px #0284c7, 0 0 30px #0369a1;
+}
+
+.text-glow-yellow {
+  text-shadow: 0 0 10px #fde047, 0 0 20px #eab308, 0 0 35px #ca8a04;
+}
+
+.text-glow-green {
+  text-shadow: 0 0 10px #4ade80, 0 0 20px #22c55e, 0 0 30px #16a34a;
+}
+
+.text-glow-purple {
+  text-shadow: 0 0 10px #c084fc, 0 0 25px #9333ea;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.5s infinite ease-in-out;
+}

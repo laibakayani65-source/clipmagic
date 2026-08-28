@@ -1,0 +1,11 @@
+{
+  "name": "Remix ClipMagic ",
+  "description": "Professional AI Auto Video Editor for YouTube Shorts, TikTok, and Facebook Reels with one-click auto-edit, Urdu \u0026 English smart captions, auto-hook, B-roll, silence removal, and multi-platform resizing.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
